@@ -177,7 +177,7 @@ body {
   border: 1px solid transparent;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  height: 36px;
+  height: 38px;
 }
 
 .header .header_flex .drop_down .space_ship_svg {
@@ -202,5 +202,64 @@ body {
 
 .header .header_flex .drop_down:hover {
   border: 1px solid #edeff1;
+}
+
+.header .header_flex .search_box {
+  width: 400px;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header_flex .search_box svg {
+  fill: #878a8c;
+  width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  position: relative;
+  left: 30px;
+}
+
+.header .header_flex .search_box .search_input {
+  border-radius: 4px;
+  border: 1px solid #edeff1;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #1c1c1c;
+  height: 36px;
+  width: 100%;
+  outline: none;
+  padding: 0 16px 0 40px;
+}
+
+.header .header_flex .search_box .search_input::-webkit-input-placeholder {
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.header .header_flex .search_box .search_input:-ms-input-placeholder {
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.header .header_flex .search_box .search_input::-ms-input-placeholder {
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.header .header_flex .search_box .search_input::placeholder {
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
