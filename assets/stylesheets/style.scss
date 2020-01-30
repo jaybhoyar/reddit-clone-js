@@ -157,10 +157,11 @@ body {
 			justify-content: space-evenly;
 			margin-left: 15px;
 			width: 270px;
+			height: 40px;
 			border-radius: 4px;
 			border: 1px solid transparent;
 			box-sizing: border-box;
-			height: 38px;
+			border: 1px solid #edeff1;
 			.space_ship_svg {
 				color: #0079d3;
 				fill: #0079d3;
@@ -190,19 +191,22 @@ body {
 			align-items: center;
 			svg {
 				fill: #878a8c;
-				width: 18px;
-				height: 18px;
+				width: 23px;
+				height: 23px;
 				padding: 0 5px;
 				position: relative;
-				left: 30px;
+				left: 35px;
 			}
 			.search_input {
 				border-radius: 4px;
 				border: 1px solid #edeff1;
 				box-shadow: none;
 				color: #1c1c1c;
-				height: 36px;
+				font-size: 1rem;
+				font-weight: 300;
+				height: 40px;
 				width: 100%;
+				background-color: #f6f7f8;
 				outline: none;
 				padding: 0 16px 0 40px;
 			}
@@ -211,6 +215,30 @@ body {
 				font-weight: 300;
 				font-family: "IBM Plex Sans", sans-serif;
 			}
+			.search_input:focus {
+				border-color: #0079d3;
+				background-color: #fff;
+			}
+		}
+		.icon_set_1 {
+			display: flex;
+			align-items: center;
+			justify-content: space-evenly;
+			width: 120px;
+			margin-right: 8px;
+			padding-right: 8px;
+			border-right: 1px solid #edeff1;
+			svg {
+				border-radius: 2px;
+				fill: #1a1a1b;
+				height: 16px;
+				line-height: 14px;
+				padding: 8px;
+				width: 16px;
+			}
+		}
+		.icon_set_2 {
+			border-right: none;
 		}
 	}
 }
