@@ -133,7 +133,7 @@ table {
   border-spacing: 0;
 }
 
-.body {
+body {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 14px;
 }
@@ -143,29 +143,64 @@ table {
   border-bottom: 1px solid #edeff1;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0 20px;
+  padding: 8px 20px;
 }
 
 .header .header_flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
-.header .header_flex .reddit_logo {
-  width: 18%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header .header_flex .reddit_logo img {
   width: 100px;
   height: 32px;
-  padding: 8px 8px 8px 0;
+  padding: 0px 8px 0px 0;
+}
+
+.header .header_flex .drop_down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-left: 15px;
+  width: 270px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 36px;
 }
 
 .header .header_flex .drop_down .space_ship_svg {
   color: #0079d3;
   fill: #0079d3;
+  height: 22px;
+  width: 22px;
+}
+
+.header .header_flex .drop_down .drop_down_title {
+  margin-left: 10px;
+  font-weight: 500;
+  width: 70%;
+  line-height: 18px;
+}
+
+.header .header_flex .drop_down .angle_down {
+  color: #fdc400;
+  height: 20px;
+  width: 20px;
+}
+
+.header .header_flex .drop_down:hover {
+  border: 1px solid #edeff1;
 }
 /*# sourceMappingURL=style.css.map */
