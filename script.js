@@ -1,7 +1,9 @@
 let input = document.querySelector(".search_input");
+let topicContainer = document.querySelector(".topic_container");
 
 function displayData(data) {
 	console.log(data);
+	topicContainer.style.display = "block";
 	let articles = data.data.children;
 	for (let i = 0; i < articles.length; i++) {
 		console.log(articles[i].data.title);

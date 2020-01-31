@@ -130,9 +130,12 @@ table {
 // Custom CSS ----------------------------
 
 // Header ======
+html {
+	font-size: 14px;
+}
 body {
 	font-family: "IBM Plex Sans", sans-serif;
-	font-size: 14px;
+
 	background-color: #dae0e6;
 }
 .angle_down {
@@ -311,6 +314,7 @@ body {
 }
 main {
 	.topic_container {
+		display: none;
 		.color_strip {
 			background: #ffc033;
 			background-position: center top;
@@ -322,6 +326,8 @@ main {
 				display: flex;
 				max-width: 964px;
 				margin: 0 auto;
+				padding-bottom: 0px;
+				box-sizing: border-box;
 				.topic_image {
 					margin-bottom: 12px;
 					margin-top: -14px;
@@ -332,15 +338,53 @@ main {
 						height: 72px;
 						width: 72px;
 					}
-        }
-        .topic_name{
-          display: flex;
-          jus
-          .title{
-
-          }
-        }
+				}
+				.topic_name {
+					margin-left: 20px;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-evenly;
+					.title {
+						font-size: 2rem;
+						font-weight: 700;
+						color: #1c1c1c;
+						text-transform: capitalize;
+					}
+					.sub_reddit_title {
+						font-size: 1rem;
+						font-weight: 500;
+						line-height: 18px;
+						color: #7c7c7c;
+					}
+				}
+				.join_button {
+					margin-left: 20px;
+					display: flex;
+					align-items: flex-start;
+					.button {
+						margin-top: 14px;
+						font-size: 0.8rem;
+						font-weight: 700;
+						letter-spacing: 0.5px;
+						line-height: 1.6rem;
+						text-transform: uppercase;
+						padding: 4px 9px 2px;
+						width: 100%;
+						border: 1px solid #cc8b00;
+						color: #cc8b00;
+						border-radius: 4px;
+						box-sizing: border-box;
+						text-align: center;
+						height: 32px;
+						width: 96px;
+					}
+				}
 			}
 		}
-	}
+  }
+  .post_padding{
+    padding: ;
+
+    width: 640px;
+  }
 }
