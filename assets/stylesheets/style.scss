@@ -133,12 +133,18 @@ table {
 body {
 	font-family: "IBM Plex Sans", sans-serif;
 	font-size: 14px;
+	background-color: #dae0e6;
+}
+.angle_down {
+	fill: #878a8c;
+	height: 20px;
+	width: 20px;
 }
 .header {
 	background-color: #fff;
 	border-bottom: 1px solid rgb(237, 239, 241);
+	padding: 6px 20px;
 	box-sizing: border-box;
-	padding: 8px 20px;
 
 	.header_flex {
 		display: flex;
@@ -173,11 +179,6 @@ body {
 				font-weight: 500;
 				width: 70%;
 				line-height: 18px;
-			}
-			.angle_down {
-				color: #fdc400;
-				height: 20px;
-				width: 20px;
 			}
 		}
 		.drop_down:hover {
@@ -239,6 +240,72 @@ body {
 		}
 		.icon_set_2 {
 			border-right: none;
+			margin-right: 0px;
+		}
+		.coins_button {
+			.button {
+				display: flex;
+				cursor: pointer;
+				justify-content: space-evenly;
+				border: 1px solid #ddbd37;
+				align-items: center;
+				padding: 9px 16px 9px 12px;
+				border-radius: 9999px;
+
+				svg {
+					fill: #ddbd37;
+					width: 16px;
+					margin-right: 4px;
+				}
+				span {
+					color: #1c1c1c;
+				}
+			}
+		}
+		.user_button {
+			padding: 2px 12px;
+			width: 180px;
+			border-radius: 4px;
+			margin-left: 8px;
+			display: flex;
+			align-items: center;
+			box-sizing: border-box;
+			justify-content: space-between;
+			// padding: 9px 16px 9px 12px;
+			img {
+				border-radius: 4px;
+				margin-right: 5px;
+				max-height: 28px;
+				max-width: 28px;
+			}
+			.user_box {
+				display: block;
+				// width: 105px;
+				// flex-direction: column;
+				.user_name {
+					padding-right: 50px;
+					font-size: 12px;
+					font-weight: 500;
+					line-height: 20px;
+					color: #1c1c1c;
+					display: block;
+				}
+				.user_badge {
+					color: #a8aaab;
+					font-size: 12px;
+					margin-top: 0px;
+					svg {
+						margin-right: 1px;
+						width: 10px;
+						height: 10px;
+						vertical-align: middle;
+						fill: #ff4500;
+					}
+				}
+			}
+		}
+		.user_button:hover {
+			border: 1px solid #edeff1;
 		}
 	}
 }

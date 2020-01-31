@@ -136,14 +136,21 @@ table {
 body {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 14px;
+  background-color: #dae0e6;
+}
+
+.angle_down {
+  fill: #878a8c;
+  height: 20px;
+  width: 20px;
 }
 
 .header {
   background-color: #fff;
   border-bottom: 1px solid #edeff1;
+  padding: 6px 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 8px 20px;
 }
 
 .header .header_flex {
@@ -193,12 +200,6 @@ body {
   font-weight: 500;
   width: 70%;
   line-height: 18px;
-}
-
-.header .header_flex .drop_down .angle_down {
-  color: #fdc400;
-  height: 20px;
-  width: 20px;
 }
 
 .header .header_flex .drop_down:hover {
@@ -299,5 +300,88 @@ body {
 
 .header .header_flex .icon_set_2 {
   border-right: none;
+  margin-right: 0px;
+}
+
+.header .header_flex .coins_button .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border: 1px solid #ddbd37;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 9px 16px 9px 12px;
+  border-radius: 9999px;
+}
+
+.header .header_flex .coins_button .button svg {
+  fill: #ddbd37;
+  width: 16px;
+  margin-right: 4px;
+}
+
+.header .header_flex .coins_button .button span {
+  color: #1c1c1c;
+}
+
+.header .header_flex .user_button {
+  padding: 2px 12px;
+  width: 180px;
+  border-radius: 4px;
+  margin-left: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .header_flex .user_button img {
+  border-radius: 4px;
+  margin-right: 5px;
+  max-height: 28px;
+  max-width: 28px;
+}
+
+.header .header_flex .user_button .user_box {
+  display: block;
+}
+
+.header .header_flex .user_button .user_box .user_name {
+  padding-right: 50px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #1c1c1c;
+  display: block;
+}
+
+.header .header_flex .user_button .user_box .user_badge {
+  color: #a8aaab;
+  font-size: 12px;
+  margin-top: 0px;
+}
+
+.header .header_flex .user_button .user_box .user_badge svg {
+  margin-right: 1px;
+  width: 10px;
+  height: 10px;
+  vertical-align: middle;
+  fill: #ff4500;
+}
+
+.header .header_flex .user_button:hover {
+  border: 1px solid #edeff1;
 }
 /*# sourceMappingURL=style.css.map */
