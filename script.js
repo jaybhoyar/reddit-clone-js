@@ -4,6 +4,7 @@ let container = document.querySelector(".post_container");
 let createPost = document.querySelector(".create_post");
 let topicTitle = document.querySelector(".title");
 let sub_reddit_title = document.querySelector(".sub_reddit_title");
+let topicText = document.querySelector(".topic_image");
 function displayData(data) {
 	topicContainer.style.display = "block";
 	let articles = data.data.children;
@@ -11,6 +12,7 @@ function displayData(data) {
 	container.innerHTML = "";
 
 	createPost.style.display = "flex";
+	// topicText.innerHTML = input.value;
 	topicTitle.innerHTML = input.value;
 	sub_reddit_title.innerHTML = `r/${input.value}`;
 	for (let i = 0; i < articles.length; i++) {
@@ -73,7 +75,10 @@ function displayData(data) {
 					<div class="col-2">
 						<h1 class="post_title">
 							${articles[i].data.title}
-						</h1>
+            </h1>
+            <a href="articles[i].data.url" class="post_url">
+              ${articles[i].data.url} 
+            </a>
 						<p class="post_description">
             ${articles[i].data.selftext}
 						</p>
