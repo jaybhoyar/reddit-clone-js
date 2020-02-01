@@ -1,13 +1,22 @@
 let input = document.querySelector(".search_input");
 let topicContainer = document.querySelector(".topic_container");
 let container = document.querySelector(".post_container");
+let createPost = document.querySelector(".create_post");
+let topicTitle = document.querySelector(".title");
+let sub_reddit_title = document.querySelector(".sub_reddit_title");
 function displayData(data) {
 	topicContainer.style.display = "block";
 	let articles = data.data.children;
 	console.log(articles);
+	container.innerHTML = "";
+
+	createPost.style.display = "flex";
+	topicTitle.innerHTML = input.value;
+	sub_reddit_title.innerHTML = `r/${input.value}`;
 	for (let i = 0; i < articles.length; i++) {
-		container.innerHTML = `
-		<div class="articles">
+		let article = document.createElement("div");
+		article.classList.add("articles");
+		article.innerHTML = `
 					<div class="col-1">
 						<span class="up_arrow">
 							<svg
@@ -70,8 +79,8 @@ function displayData(data) {
 						</p>
 					</div>
 				</div>
-      </div>
       `;
+		container.appendChild(article);
 	}
 }
 function getData(event) {
