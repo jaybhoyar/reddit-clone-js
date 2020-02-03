@@ -148,6 +148,8 @@ body {
 	border-bottom: 1px solid rgb(237, 239, 241);
 	padding: 6px 20px;
 	box-sizing: border-box;
+	position: fixed;
+	z-index: 100;
 
 	.header_flex {
 		display: flex;
@@ -315,6 +317,7 @@ body {
 main {
 	.topic_container {
 		display: none;
+		padding-top: 50px;
 		// animation: cubic-bezier(0.6, -0.28, 0.735, 0.045);
 		.color_strip {
 			background: #ffc033;
@@ -323,6 +326,7 @@ main {
 		}
 		.topic_strip {
 			background-color: #fff;
+			padding: 10px 0;
 			.topic_content {
 				display: flex;
 				max-width: 964px;
@@ -344,17 +348,18 @@ main {
 					margin-left: 20px;
 					display: flex;
 					flex-direction: column;
-					justify-content: space-evenly;
+					justify-content: space-between;
 					.title {
 						font-size: 2rem;
-						font-weight: 700;
+						font-weight: 600;
 						color: #1c1c1c;
 						text-transform: capitalize;
+						font-family: monospace;
 					}
 					.sub_reddit_title {
 						font-size: 1rem;
 						font-weight: 500;
-						line-height: 18px;
+						line-height: 24px;
 						color: #7c7c7c;
 					}
 				}
@@ -363,7 +368,7 @@ main {
 					display: flex;
 					align-items: flex-start;
 					.button {
-						margin-top: 14px;
+						margin-top: 4px;
 						font-size: 0.8rem;
 						font-weight: 700;
 						letter-spacing: 0.5px;
@@ -387,7 +392,7 @@ main {
 		padding: 20px 24px;
 	}
 	.post_container {
-		width: 640px;
+		width: 768px;
 		margin: 0 auto;
 	}
 	.create_post {
@@ -522,7 +527,7 @@ main {
 					padding: 0 10px;
 					flex-grow: 1;
 					span {
-            padding-right: 10px;
+						padding-right: 10px;
 						color: #888;
 						img {
 							display: inline-block;

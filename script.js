@@ -10,11 +10,10 @@ function displayData(data) {
 	let articles = data.data.children;
 	console.log(articles);
 	container.innerHTML = "";
-
 	createPost.style.display = "flex";
-	// topicText.innerHTML = input.value;
 	topicTitle.innerHTML = input.value;
 	sub_reddit_title.innerHTML = `r/${input.value}`;
+	input.value = "";
 	for (let i = 0; i < articles.length; i++) {
 		let article = document.createElement("div");
 		article.classList.add("articles");
@@ -111,6 +110,7 @@ function getData(event) {
 			})
 			.then(jsonData => {
 				console.log(jsonData);
+
 				displayData(jsonData);
 			});
 	}

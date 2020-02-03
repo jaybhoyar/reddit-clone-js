@@ -154,6 +154,8 @@ body {
   padding: 6px 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  position: fixed;
+  z-index: 100;
 }
 
 .header .header_flex {
@@ -390,6 +392,7 @@ body {
 
 main .topic_container {
   display: none;
+  padding-top: 50px;
 }
 
 main .topic_container .color_strip {
@@ -400,6 +403,7 @@ main .topic_container .color_strip {
 
 main .topic_container .topic_strip {
   background-color: #fff;
+  padding: 10px 0;
 }
 
 main .topic_container .topic_strip .topic_content {
@@ -435,22 +439,23 @@ main .topic_container .topic_strip .topic_content .topic_name {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 main .topic_container .topic_strip .topic_content .topic_name .title {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 600;
   color: #1c1c1c;
   text-transform: capitalize;
+  font-family: monospace;
 }
 
 main .topic_container .topic_strip .topic_content .topic_name .sub_reddit_title {
   font-size: 1rem;
   font-weight: 500;
-  line-height: 18px;
+  line-height: 24px;
   color: #7c7c7c;
 }
 
@@ -465,7 +470,7 @@ main .topic_container .topic_strip .topic_content .join_button {
 }
 
 main .topic_container .topic_strip .topic_content .join_button .button {
-  margin-top: 14px;
+  margin-top: 4px;
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -488,7 +493,7 @@ main .post_padding {
 }
 
 main .post_container {
-  width: 640px;
+  width: 768px;
   margin: 0 auto;
 }
 
