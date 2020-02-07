@@ -1,12 +1,14 @@
 let input = document.querySelector(".search_input");
 let topicContainer = document.querySelector(".topic_container");
 let container = document.querySelector(".post_container");
+let colorStrip = document.querySelector(".color_strip");
 let createPost = document.querySelector(".create_post");
 let topicTitle = document.querySelector(".title");
 let sub_reddit_title = document.querySelector(".sub_reddit_title");
 let topicText = document.querySelector(".topic_image");
 function displayData(data) {
 	topicContainer.style.display = "block";
+	colorStrip.style.background = "#00fdb5";
 	let articles = data.data.children;
 	console.log(articles);
 	container.innerHTML = "";
