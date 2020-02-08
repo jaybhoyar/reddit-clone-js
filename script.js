@@ -6,13 +6,28 @@ let createPost = document.querySelector(".create_post");
 let topicTitle = document.querySelector(".title");
 let sub_reddit_title = document.querySelector(".sub_reddit_title");
 let topicText = document.querySelector(".topic_image");
+function getRandomColor() {
+	var myArray = [
+		"#009595",
+		"#FF0000",
+		"#3f9ade",
+		"#FF006D",
+		"#FF4500",
+		"#ff6a32",
+		"#FFC033",
+		"#1c1c1c",
+		"#73AD34"
+	];
+	var randomItem = myArray[Math.floor(Math.random() * myArray.length)];
+	return randomItem;
+}
 function displayData(data) {
 	topicContainer.style.display = "block";
-	colorStrip.style.background = "#00fdb5";
 	let articles = data.data.children;
 	console.log(articles);
 	container.innerHTML = "";
 	createPost.style.display = "flex";
+	colorStrip.style.background = getRandomColor();
 	topicTitle.innerHTML = input.value;
 	sub_reddit_title.innerHTML = `r/${input.value}`;
 	input.value = "";

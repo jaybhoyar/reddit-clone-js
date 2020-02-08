@@ -652,7 +652,6 @@ main .articles .col-2 .post_title {
 main .articles .col-2 .post_url {
   display: inline-block;
   text-decoration: none;
-  overflow: hidden;
   padding: 0 10px;
   padding-top: 10px;
   color: #cc8b00;
@@ -721,5 +720,9 @@ main .articles .col-2 .footer .post_footer span img {
   margin-right: 4px;
   vertical-align: middle;
   width: 16px;
+}
+
+main .articles:hover {
+  border: 1px solid #585858;
 }
 /*# sourceMappingURL=style.css.map */

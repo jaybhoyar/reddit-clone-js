@@ -491,7 +491,7 @@ main {
 			.post_url {
 				display: inline-block;
 				text-decoration: none;
-				overflow: hidden;
+
 				padding: 0 10px;
 				padding-top: 10px;
 				color: #cc8b00;
@@ -541,5 +541,8 @@ main {
 				}
 			}
 		}
+	}
+	.articles:hover {
+		border: 1px solid #585858;
 	}
 }
